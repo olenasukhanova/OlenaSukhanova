@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Startup</title>
-    <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="reset.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -14,8 +15,8 @@
 			<div class="overlay"></div>
 				<div class=container>
 			 	 <ul class="header-nav">
-				 	<li><img src="img/logo.png" alt="logo"></li>
-				 	 <li class="navigation">
+				 	<li id="col-md-3"> <div class="logo"></div></li>
+				 	 <li class="col-md-9">
 						 <nav>
 					  	<ul class="menu">
 							 <li> <a href=""> Home </a></li>
@@ -29,38 +30,42 @@
 				</nav>
 			</li>
 		</ul>
+		<div class="col-md-12">
 		<div class= "title-part">
 			<p class="title"> Welcome to startup</p>
 			<p class="welcome-text">Your favorite creative agency template</p>
 			<button class="start-butt">Get started</button>
 		</div>
 </div>
+</div>
 </header>
    <main class="main">
 		  <div class=container>
 		   <div class="servises">
+				 <div class="col-md-12">
 			   <p class="title2">Services</p>
 			 		<div class="line"><img src="img/line.png" alt=""></div>
 			 			<p class="services-text">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+					</div>
 			 				<ul class="menu-services">
-			 					<li class="flex-item1">
+			 					<li class="col-md-4">
 					 				<button class="butt1"> A </button>
 										<p class="item1">Clean typography</p>
 				    					<p class="itemtext"> Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.</p>
 									</li>
-						<li class="flex-item2">
+						<li class="col-md-4">
 							<button class="butt2"></button>
 						   	<p class="item1">Rock solid cod</p>
 						      <p class="itemtext"> Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.</p>
 						  </li>
-								  <li class="flex-item3">
+								  <li class="col-md-4">
 										<button class="butt3"></button>
 										   <p class="item1">Expert support</p>
 								         <p class="itemtext"> Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.</p>
 									</li>
 			        </ul>
 		      </div>
-		  </div>
+				</div>
 	 </main>
 	    <section class="section1">
 				<div class="Section1overlay"></div>
@@ -69,18 +74,20 @@
 							 <p class="title2">About us</p>
 					 				<div class="line"><img src="img/line.png" alt=""></div>
 					 					<p class="services-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+										 <!-- <div class="col-md-12"> -->
 											 <ul class="work-column">
-						 							<li> <p class="work-text">Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.
+						 							<li> <p class="work-text1">Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.
 							 Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.
 							 Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.
 							 Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.</p>
             							 </li>
-						 									<li class="work-column2"><p class="work-text">Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.
+						 									<li> <p class="work-text2">Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.
 							 Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.
 							 Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.
 							 Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.</p>
 														 </li>
 					 								</ul>
+												<!-- </div> -->
 						 <ul class="work-team">
 							  <li>
 									 <div class="overlay_in_photo">
@@ -150,6 +157,7 @@
 							    </li>
 						 </ul>
 				</div>
+			</div>
 		</section>
 	<section class="section2">
 		<div class=container>
@@ -274,6 +282,7 @@
 								</li>
 						</ul>
 				</div>
+			</div>
 </section>
 		<section class="section3">
 			<div class="photoOverlay"></div>
@@ -292,8 +301,10 @@
 				  <div class="line"><img src="img/line.png" alt=""></div>
 				    <p class="services-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
 			      	<ul class="calendar-column">
-				      	<li class="calendar-photo"><img src="img/img28.png" alt=""></li>
-				         	<li class="calendar-text">
+				      	<li class="calendar-photo-row">
+									<div class="calendar-photo"></div>
+                </li>
+				         	 <li class="calendar-text">
 					        	<div class="artc-row">
 					          	<div class="rect">
 						            <p class="date">18</p>
@@ -307,11 +318,16 @@
 				 Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.
 				 Nunc mattis lorem  in leo lobortis, ut venenatis justo commodo. Maecenas justo nec velit egestas fermentum. Lorem ipsum.</p>
 					 <p class="butt8"><a href="" class="color">Read more</a></p>
-					</div>
-			</li>
-<li class="calendar-photo2"><img src="img/img27.png" alt=""></li>
-	<li class="calendar-text2">
-		<div class="artc-row">
+			</div>
+		</li>
+	</ul>
+		<div class="line3"></div>
+	<ul class="calendar-column">
+		<li class="calendar-photo-row">
+		<div class="calendar-photo2"></div>
+	</li>
+  <li class="calendar-text">
+		<div class="artc-row2">
 			<div class="rect">
 				<p class="date">18</p>
 					<p class="month">oct</p>
@@ -352,44 +368,39 @@
 		</div>
 	</div>
 </slider>
-<section class="contact-section">
+<section class="section5">
  	<div class=container>
 		 <div class="contact-desc">
- 			  <p class="title2">Get in touch</p>
- 			 		<div class="line"><img src="img/line.png" alt=""></div>
- 			 			<p class="services-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
-		   </div>
+			   <div class="contact-section">
+ 			     <p class="title2">Get in touch</p>
+ 			 		  <div class="line"><img src="img/line.png" alt=""></div>
+ 			 		   	<p class="services-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+						</div>
 				  <ul class="contact_block">
 				  	<li class="contact_info">
-				  		 <ul class="contact_block2">
-				  		   	<li class="block1">
-									  <ul class="contact_block3">
-								       <li class="icon_123"></li>
-													<li class="adress-block"> <p class="adress-title">address</p><br>
+								       <div class="icon_123"></div>
+													<div class="adress-block"> <p class="adress-title">address</p><br>
 														<p> 312, 7th Ave New York </p> <br>
 																<p> NY 101200, United States of America</p>
-													   	</li>
-														<li class="icon_456"></li>
-															<li class="adress-block"> <p class="adress-title">hotline (24X7)</p><br>
-																<p> +65 992484483, +65 080980989 </p> <br>
-																	<p> +88 562849203</p>
-																</li>
-																	<li class="icon_789"></li>
-																		<li class="adress-block"> <p class="adress-title">e-mail</p><br>
-																			<p> shapetheme@gmail.com </p> <br>
-																				<p> khalilkode@gmail.com</p>
-																	</li>
-													     </ul>
-								            </li>
-				  		           </ul>
-				  	         </li>
-				  	<li class="feedbackform">
-				  		<form>
+													   	</div>
+														<div class="icon_456"></div>
+															 <div class="adress-block"> <p class="adress-title">hotline (24X7)</p><br>
+															  	<p> +65 992484483, +65 080980989 </p> <br>
+																	  <p> +88 562849203</p>
+																</div>
+																	 <div class="icon_789"></div>
+																	  	<div class="adress-block"> <p class="adress-title">e-mail</p><br>
+																		   	<p> shapetheme@gmail.com </p> <br>
+																			  	<p> khalilkode@gmail.com</p>
+																	</div>
+				  	                </li>
+				  	<li>
+				  		<form class="feedbackform">
 								<div class="block1"> <input type="text" placeholder="your name" id="name">
-									    <input type="e-mail" name="email" placeholder="your e-mail" id="email">  <div>
+									    <input type="e-mail" name="email" placeholder="your e-mail" id="email">  </div>
 								<div class="block2"> <input type="text" placeholder="your subject" id="subject">
 											<input type="text" placeholder="your company" id="company">	</div>
-                <div> <textarea name="" placeholder="write your message"id="textarea"></textarea></div>
+                <div class="textarea"> <textarea name="" placeholder="write your message"id="textarea"></textarea></div>
 								 <div class="submit-block">
 									 <button id="submit">send message</button>
                     <span class="star">*</span> <span class="submit_text">We'll contact you as soon as possible. We don't reply on Monday.</span>
@@ -398,6 +409,7 @@
 				  	</li>
 				  </ul>
 			</div>
+		</div>
 	 </section>
 		<footer class="footer">
 		  <div class=container>
@@ -416,6 +428,7 @@
 									<div class="copyright"> &copy; 2015 startup , desighed by shapedtheme</div>
 					 </div>
 		  </div>
+		 </div>
 	 </footer>
  </div>
 </body>
