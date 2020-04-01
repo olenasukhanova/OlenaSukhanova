@@ -403,6 +403,7 @@ ul.work-column {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	padding-top: 70px;
+	padding-bottom: 70px;
 	text-align: justify;
 	position: relative;
 	z-index:11;
@@ -428,14 +429,8 @@ p.work-text1, .work-text2 {
 	 z-index:11;
  }
 
+/* SLIDER WORK TEAM */
 
-ul.work-team {
-	 display:flex;
- 	 flex-flow: row nowrap;
- 	 justify-content: space-between;
-	 padding-top: 70px;
-	 position: relative;
- }
 
  /* .work-team li {
  	padding-left: 30px;
@@ -443,8 +438,9 @@ ul.work-team {
 	align-items: center;
 	align-self: center;
 	text-align: center;
- }
- .work-column2 {
+ } */
+
+ /* .work-column2 {
  	margin-left: 0px;
 	padding-top: 70px;
  } */
@@ -592,6 +588,12 @@ a.butt7-in {
 		padding-top: 15px;
 	}
 
+.dot-rect {
+
+}
+.work-team  {
+		 outline:none;
+		}
 
 @media all and (max-width: 800px) {
 div.work-team-desc {
@@ -600,19 +602,17 @@ div.work-team-desc {
 ul.work-column {
 		justify-content: space-around;
 	}
-ul.work-team {
-	  justify-content: space-around;
-}
+
 	}
 
 	@media all and (max-width: 500px) {
-div.work-team-desc {
+/* div.work-team-desc {
 		display: flex;
 		flex-flow: column wrap;
 		justify-content:center;
 		align-items: center;
 		padding: 100px 0 100px 0;
-	}
+	} */
 ul.work-column {
 		display: flex;
 		flex-flow: column nowrap;
@@ -622,19 +622,17 @@ ul.work-column {
 		text-align:justify;
 		padding-left:10px;
 		padding-right: 10px;
+		padding-bottom: 10px;
 	}
 
 .work-column li {
 		padding-top: 30px;
+		padding-bottom:30px;
 	}
 .work-column2 {
   	margin-left:0px;
   }
-ul.work-team {
-		 display:flex;
-	 	 flex-flow: column wrap;
-	 	 justify-content: space-around;
-	 }
+
 
 .title3 {
 		padding-top:10px;
@@ -642,9 +640,15 @@ ul.work-team {
 	}
 .title4 {
 		padding-top: 5px;
-		padding-bottom:20px;
+		padding-bottom:50px;
 	}
+.work-team  {
+ outline:none;
+}
+
 	}
+
+
 
 	/* section 2 */
 .section2 {
@@ -821,6 +825,7 @@ div.overlay-row {
     width:320px;
 		height:320px;
 	}
+
  	}
 
  /* Section 3 */
@@ -1017,7 +1022,6 @@ ul.calendar-column {
 		padding:100px 0 100px 0;
 	  display: flex;
 		flex-flow: row wrap;
-		/* flex-flow: row nowrap; */
 		justify-content: space-around;
 	 }
 	 .slider-block {
@@ -1040,7 +1044,7 @@ ul.calendar-column {
 
 	 .slick-dots li button:before {
 		 font-size: 15px;
-		  color:#c0301c;
+		  color:grey;
 		 	z-index: 11;
 	 }
 
@@ -1056,7 +1060,9 @@ ul.calendar-column {
 		 height: 400px;
 		 padding-left: 5px;
 		 padding-right: 5px;
+		 padding-bottom: 25px;
 	 }
+
 
 .iconOverlay {
 		position:absolute;
@@ -1070,15 +1076,14 @@ ul.calendar-column {
 		z-index:10;
   }
 
-	@media all and (max-width: 500px) {
+	/* @media all and (max-width: 500px) {
 		.slider-block > div {
 			text-align: center;
 			color:white;
 		}
 
 		img.slider_photo {
-			/* width:522%; */
-			height: 522px;
+			height: 400px;
 			padding-left:5px;
 			padding-top: 5px;
 		}
@@ -1087,14 +1092,10 @@ ul.calendar-column {
 			font-size:5px;
 		}
 		.slick-prev{
-			/* position: absolute; */
-			/* top:29%; */
  		  left:-4px;
 			z-index: 11;
 		}
    .slick-next{
-		 /* position: absolute; */
-		 /* top:29%; */
 		 right:-4px;
 		 z-index: 11;
 	 }
@@ -1112,7 +1113,7 @@ ul.calendar-column {
 		 opacity: 1;
 		 z-index: 11;
 	}
-	}
+	} */
 
 ul.social-icon-row {
 		position: relative;
@@ -1126,7 +1127,7 @@ li.icon-1,.icon-2,.icon-3,.icon-4,.icon-5 {
 		background:url("img/icon30.png") no-repeat;
 		background-position: center;
 		width: 160px;
-		height:58px;
+		height:48px;
 	}
 
 li.icon-2 {
@@ -1153,7 +1154,7 @@ ul.quote-row {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content:center;
-		padding-top: 76px;
+		padding-top: 20px;
 		position: relative;
 		z-index: 11;
 	}
@@ -1164,14 +1165,15 @@ ul.quote-row {
 		text-align: center;
 		font-family: 'Roboto Slab', serif;
 		font-weight: 400;
-		font-size: 14px;
+		font-size: 12px;
 		line-height: 20px;
 	}
 
 p.name-quote {
 	 font-style: normal;
-	 padding-top: 42px;
-	 font-size: 16px;
+	 padding-top: 12px;
+	 font-size: 14px;
+	 padding-bottom: 25px;
 	}
 
 div.circles {
